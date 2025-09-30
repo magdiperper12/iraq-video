@@ -8,15 +8,15 @@ import { IoClose } from 'react-icons/io5';
 
 import Image from 'next/image';
 import Dark from '../theme/Dark';
+import { FaUser } from 'react-icons/fa';
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const navLinks = [
-		{ name: 'Home', href: '/' },
-		{ name: 'geel', href: '/pages/geel' },
-		{ name: 'videos', href: '/pages/videos' },
-		{ name: 'profile', href: '/pages/profile' },
-		{ name: 'subscripe', href: '/pages/subscripe' },
+		{ name: 'الرئيسيه', href: '/' },
+		{ name: 'الاجيال', href: '/pages/geel' },
+		{ name: 'الفيديوهات', href: '/pages/videos' },
+		{ name: 'اشتراكك', href: '/pages/subscripe' },
 	];
 	return (
 		<header className='backdrop-blur-lg dark:bg-black/10 bg-white/10  fixed   w-full pb-2   text-darkprimary  dark:text-white  shadow-lg'>
@@ -50,7 +50,9 @@ const Header = () => {
 				{/* Right actions */}
 				<div className='flex items-center gap-4'>
 					<Dark />
-
+					<Link href={'/pages/profile'}>
+						<FaUser className='p-2 rounded-full border-blue-900 border-2 w-8 text-blue-900 h-8' />
+					</Link>
 					{/* Mobile Menu Button */}
 					<button
 						className='lg:hidden  p-2 text-darkprimary text-2xl dark:text-primary'

@@ -13,8 +13,7 @@ export default function DashboardPage() {
 		<main className='p-6 min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300'>
 			{/* Header */}
 			<h1 className='text-2xl font-bold mb-6'>
-				👋 أهلاً بك،{' '}
-				<span className='text-primary dark:text-darkprimary'>أحمد محمد</span>!
+				👋 أهلاً بك، <span className='text-forth '>أحمد محمد</span>!
 			</h1>
 
 			{/* Stats */}
@@ -64,7 +63,7 @@ export default function DashboardPage() {
 					<p className='text-gray-500 dark:text-gray-400 text-sm mb-4'>
 						اكتشف الباقات المتاحة للترقية
 					</p>
-					<button className='bg-primary dark:bg-darkprimary hover:opacity-90 text-white rounded-lg py-2 transition'>
+					<button className='bg-primary dark:bg-darkprimary hover:opacity-90 text-darksecoundry rounded-lg py-2 transition'>
 						ابدأ الآن
 					</button>
 				</div>
@@ -129,7 +128,9 @@ export default function DashboardPage() {
 
 			{/* Referral Code */}
 			<div className='bg-gradient-to-r from-primary to-secondary dark:from-darkprimary dark:to-cyan-600 p-5 rounded-2xl flex flex-col md:flex-row justify-between items-center text-white shadow-md'>
-				<span className='font-bold text-lg'>كود الإحالة الخاص بك</span>
+				<span className='font-bold text-lg text-forth'>
+					كود الإحالة الخاص بك
+				</span>
 				<div className='flex items-center gap-3 mt-3 md:mt-0'>
 					<span className='bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-4 py-1 rounded-lg shadow font-mono'>
 						AHM123

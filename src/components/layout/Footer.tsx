@@ -26,11 +26,11 @@ const Footer = () => {
 				{/* Company Info */}
 				<div>
 					<h2 className='text-2xl font-bold mb-4 text-darkthird dark:text-third'>
-						footerTitle
+						استثمار
 					</h2>
 					<p className='text-sm leading-6 text-darkprimary dark:text-darkforth'>
-						<span className='text-darkthird dark:text-third'>TOKEN</span>{' '}
-						footerDesc
+						<span className='text-darkthird dark:text-third'>استثمار</span> تفقد
+						جميع خدماتنا
 					</p>
 				</div>
 
@@ -38,14 +38,14 @@ const Footer = () => {
 				<div className='grid grid-cols-2 '>
 					<div>
 						<h3 className='text-lg font-semibold mb-4 text-third dark:text-white'>
-							quickLinks
+							لينكات سريعه
 						</h3>
 						<ul className='space-y-2 text-sm'>
 							{[
-								{ label: 'quickHome', href: '/' },
-								{ label: 'quickAbout', href: '/about' },
-								{ label: 'quickServices', href: '/services' },
-								{ label: 'quickContact', href: '/contact' },
+								{ label: 'الرئيسيه', href: '/' },
+								{ label: 'من نحن', href: '/about' },
+								{ label: 'خدماتنا', href: '/services' },
+								{ label: 'تواصل معنا', href: '/contact' },
 							].map(({ label, href }) => (
 								<li key={label}>
 									<Link
@@ -62,14 +62,14 @@ const Footer = () => {
 
 					<div>
 						<h3 className='text-lg font-semibold mb-4 text-third dark:text-white'>
-							quickResources
+							مصادر
 						</h3>
 						<ul className='space-y-2 text-sm'>
 							{[
-								{ label: 'quickCareers', href: '/careers' },
-								{ label: 'quickBlog', href: '/blog' },
-								{ label: 'quickPricing', href: '/pricing' },
-								{ label: 'quickSupport', href: '/support' },
+								{ label: 'مساراتنا', href: '/careers' },
+								{ label: 'محتوانا', href: '/blog' },
+								{ label: 'اسغارنا', href: '/pricing' },
+								{ label: 'الدعم', href: '/support' },
 							].map(({ label, href }) => (
 								<li key={label}>
 									<Link
@@ -85,7 +85,7 @@ const Footer = () => {
 				{/* Socials */}
 				<div>
 					<h3 className='text-lg font-semibold mb-4 text-third dark:text-white'>
-						followUs
+						تابعنا
 					</h3>
 					<div className='flex gap-4 text-lg'>
 						<a
